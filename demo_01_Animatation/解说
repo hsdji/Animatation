@@ -1,0 +1,36 @@
+
+1.首先说明一下iOS图层可以分为以下几个层次
+
+                    UIKit/AppKit
+                Core Animatation
+            OpenGL/Open GL  Core Graphics
+                    GraPhics Hardware
+
+
+
+越上层，封装度越高，共话越简洁，但是自由度就越低；反之亦然。本demo主要介绍CoreAnimatation层的基本动画实现方案。
+在iOS中，展现动画可以类比于显示生活中的‘拍电影’。拍电影有三大要素演员＋剧本＋开拍  概念类比如下
+演员－－－－－－－》CALayer，规定电影的主角是谁。
+剧本－－－－－－－》CAAnimatation，规定电影该怎么演，怎么走，怎么变换
+开拍－－－－－－－》AddAnimatation，开始执行
+1）。名词解析
+    1.1CALayer是一个与UIView很类似的概念，同样有layer，sublayer......，同样有backGroundColor、frame等类似的属性，我门可以将UIView看作是一种特殊的CAlayer，只不过是UIView可以响应事件而已。一般来说，layer可以有两种途径，二者不相互冲突：一是对view相关属性的设置，包括圆角、阴影、边框等参数，更详细的参数｛
+        1.shadowPath：设置CALayer的背景（showDown）的位置
+        2.shadowOffset:shadow在X和Y轴延伸方向，及shaDow的大小
+        3.shadowOpactity：shadow的透明效果
+        4。shadowRadius：shadow的渐变距离，从waiwei开始，往里渐变shadowRadius距离
+        5.masksToBounds：很重要的属性，可以用此属性来防止自元素大小益处父元素，如若防止益处，请设置Ture
+        .
+        .
+        .
+        .
+.具体参数请参考:https://www.cnblogs.com/xunziji/archive/2012/10/30/2736769.html｝二是实现对view的动画操控。因此对一个view进行Core animatation动画，本质就是对view的layer的操作。
+2）。CAAnimatation
+    2.1CABasicAnimatation
+        通过设置始终点，时间，动画会沿着设定的点进行移动。可以看作特殊的CAKeyFrameAnimatation
+    2.2CAKeyframeAnimatation
+        keyFrame顾名思义就是关键的frame，你可以通过设置CALayer的始点、中间关键点、终点的frame，时间，动画就会按照设定的轨迹进行移动。
+3).CAanimatationGroup
+    Group就是组合的意思，就是把针对这个Layer的所有的动画都组合起来。PS：一个layer设定了很多动画，他们会同时执行，如何按顺序执行后面会在讲解。
+4).CATransition
+    这是由苹果公司开发者封装好的一些动画。

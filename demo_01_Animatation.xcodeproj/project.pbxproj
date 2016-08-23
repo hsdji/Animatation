@@ -13,6 +13,8 @@
 		4B087F941D6BF412000A7772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B087F921D6BF412000A7772 /* Main.storyboard */; };
 		4B087F961D6BF412000A7772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B087F951D6BF412000A7772 /* Assets.xcassets */; };
 		4B087F991D6BF412000A7772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B087F971D6BF412000A7772 /* LaunchScreen.storyboard */; };
+		4B087FA11D6BF43A000A7772 /* 解说 in Resources */ = {isa = PBXBuildFile; fileRef = 4B087FA01D6BF43A000A7772 /* 解说 */; };
+		4B087FA41D6C2D1F000A7772 /* ThrowLineTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B087FA31D6C2D1F000A7772 /* ThrowLineTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		4B087F951D6BF412000A7772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B087F981D6BF412000A7772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B087F9A1D6BF412000A7772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B087FA01D6BF43A000A7772 /* 解说 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解说"; sourceTree = "<group>"; };
+		4B087FA21D6C2D1F000A7772 /* ThrowLineTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrowLineTool.h; sourceTree = "<group>"; };
+		4B087FA31D6C2D1F000A7772 /* ThrowLineTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThrowLineTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +67,14 @@
 				4B087F8D1D6BF412000A7772 /* AppDelegate.m */,
 				4B087F8F1D6BF412000A7772 /* ViewController.h */,
 				4B087F901D6BF412000A7772 /* ViewController.m */,
+				4B087FA21D6C2D1F000A7772 /* ThrowLineTool.h */,
+				4B087FA31D6C2D1F000A7772 /* ThrowLineTool.m */,
 				4B087F921D6BF412000A7772 /* Main.storyboard */,
 				4B087F951D6BF412000A7772 /* Assets.xcassets */,
 				4B087F971D6BF412000A7772 /* LaunchScreen.storyboard */,
 				4B087F9A1D6BF412000A7772 /* Info.plist */,
 				4B087F891D6BF412000A7772 /* Supporting Files */,
+				4B087FA01D6BF43A000A7772 /* 解说 */,
 			);
 			path = demo_01_Animatation;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B087F991D6BF412000A7772 /* LaunchScreen.storyboard in Resources */,
+				4B087FA11D6BF43A000A7772 /* 解说 in Resources */,
 				4B087F961D6BF412000A7772 /* Assets.xcassets in Resources */,
 				4B087F941D6BF412000A7772 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B087FA41D6C2D1F000A7772 /* ThrowLineTool.m in Sources */,
 				4B087F911D6BF412000A7772 /* ViewController.m in Sources */,
 				4B087F8E1D6BF412000A7772 /* AppDelegate.m in Sources */,
 				4B087F8B1D6BF412000A7772 /* main.m in Sources */,
